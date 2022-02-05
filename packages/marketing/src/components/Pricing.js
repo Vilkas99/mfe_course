@@ -167,15 +167,13 @@ export default function Pricing() {
         </Typography>
       </Container>
       {/* End hero unit */}
-      <Container maxWidth="md" component="main">
+      <Container component="main">
         <Grid container spacing={5} alignItems="flex-end">
           {tiers.map((tier) => (
             // Enterprise card is full width at sm breakpoint
             <Grid
               item
               key={tier.title}
-              xs={12}
-              sm={tier.title === 'Enterprise' ? 12 : 6}
               md={4}
             >
               <Card>
